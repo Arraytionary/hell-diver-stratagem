@@ -1,6 +1,15 @@
 .arrow {
-  height: 12rem;
+  height: 4rem;
   &.inactive {
     opacity: 40%;
+  }
+}
+
+$direction: up, right, down, left;
+$angle: 0, 90, 180, 270;
+
+@each $dir, $ang in zip($direction, $angle) {
+  .#{$dir} {
+    transform: rotate(#{$ang}deg);
   }
 }

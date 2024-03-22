@@ -1,1 +1,5 @@
-<img src="assets/icon/arrow.png" alt="arrow" class="arrow inactive">
+<img
+  src="assets/icon/arrow.png"
+  alt="arrow" class="arrow {{direction()}}"
+  [ngClass]="{'inactive': !isActive()}"
+>

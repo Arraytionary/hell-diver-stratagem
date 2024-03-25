@@ -1,3 +1,5 @@
 <div #filterContainer class="swipe-container">
-  <app-arrow [direction]="Direction.RIGHT" [isActive]="false"></app-arrow>
+  @for (stratagem of currentStratagem$ | async; track stratagem) {
+   <app-arrow [direction]="stratagem" [isActive]="false"></app-arrow>
+  }
 </div>

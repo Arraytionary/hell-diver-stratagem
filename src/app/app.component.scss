@@ -158,6 +158,7 @@ h1{
   background-repeat: repeat;
   background-size: 100vw 3vh;
   animation: bgscroll 9s linear infinite;
+  pointer-events: none;
 }
 
 @keyframes bgscroll {
